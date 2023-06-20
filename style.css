@@ -1,2 +1,59 @@
-/* follow my design and just make sure everything is in place first before i start the javascript */
-/* some of the css and html will be written in javascript */
+* {
+    box-sizing: border-box;
+ 
+}
+
+
+    
+    h2 {
+        border: 3px solid black;
+        margin-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    body > div {
+       
+        width: 10%;
+        height: 20vh;
+    
+        align-items: center;
+        
+        border: 3px solid black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+       
+    }
+    #box0{
+        margin-left: 35%;
+        
+       
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    /* #box3{
+        margin-left: 35%;
+    }
+    #box6{
+        margin-left: 35%;
+    } */
+    .cash-out{
+        width: 100%;
+
+    }
+    .start{
+        width: 100%;
+    }
+    #title {
+        
+        margin-top: 5%;
+        text-align: center;
+        width: 100%;
+        font-size: 30px ;
+    }
