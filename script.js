@@ -6,6 +6,7 @@ const resultsEl = document.querySelector('h2');
 const resetEl = document.querySelector('.reset');
 const playBtn = document.querySelector('.start');
 const cashOut = document.querySelector('.cash-out');
+const music = document.querySelector('.backgroundSound');
 const icons = [
     'icons/apple.png',
     'icons/cherries.png',
@@ -50,6 +51,7 @@ function wonOrTryAgain() {
     box0.style.backgroundImage = `url(${icons[r]})`;
     box1.style.backgroundImage = `url(${icons[r]})`;
     box2.style.backgroundImage = `url(${icons[r]})`;
+    jackpotSound()
     resultsEl.innerText = 'JACKPOT!';
     wallet.innerHTML = parseInt(wallet.innerHTML) + 1000;
     game = false;
@@ -85,6 +87,7 @@ function generateRandomIcons(icons, r, p, b) {
 
 function resetButton() {
   game = true;
+  wallet.innerHTML = '100';
   playBtn.disabled = false;
   resultsEl.innerText = 'LETS PLAY';
   box0.style.backgroundImage = 'none';
@@ -98,7 +101,7 @@ playBtn.addEventListener('click', function() {
     
     playBtn.disabled = false; // Enable the spin button
     
-}, 1000);
+}, 1800);
 
   playBtn.disabled = true; // Disable the spin button during the timer
 });
@@ -109,3 +112,21 @@ resetEl.addEventListener('click', resetButton);
 cashOut.addEventListener('click',function(){
     wallet.innerHTML = '0';
 })
+
+
+function spinSound() {
+    const spinSound = new Audio('sounds/CasinoSlotMachine_S08SP.184.wav'); 
+    spinSound.play();
+}
+function musicSound() {
+    const musicSound = new Audio('sounds/CasinoSlotMachine_SFXB.21.wav'); 
+    musicSound.play();
+}
+function jackpotSound() {
+    const jackpotSound = new Audio('sounds/GameChimeWinner_S08TE.670.wav'); 
+    jackpotSound.play();
+}
+
+playBtn.addEventListener('click',spinSound);
+
+music.addEventListener('click',musicSound);
