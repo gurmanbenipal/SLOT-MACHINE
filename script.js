@@ -114,22 +114,22 @@ cashOut.addEventListener('click',function(){
     wallet.innerHTML = '0';
 })
 function loseSound(){
-    const loseSound = new Audio('sounds/ESM_Death_Game_Over_1_Sound_FX_Arcade_Casino_Kids_Mobile_App.wav')
+    const loseSound = new Audio('sounds/ESM_Death_Game_Over_1_Sound_FX_Arcade_Casino_Kids_Mobile_App.mp3')
     loseSound.play();
 }
 
 function spinSound() {
-    const spinSound = new Audio('sounds/CasinoSlotMachine_S08SP.184.wav'); 
+    const spinSound = new Audio('sounds/CasinoSlotMachine_S08SP.184.mp3'); 
     spinSound.play();
 }
 function jackpotSound() {
-    const jackpotSound = new Audio('sounds/ESM_Casino_Bling_Sound_FX_Arcade_Kids_Mobile_App.wav'); 
+    const jackpotSound = new Audio('sounds/ESM_Casino_Bling_Sound_FX_Arcade_Kids_Mobile_App.mp3'); 
     jackpotSound.play();
 }
 function cashOutSound() {
     resetEl.disabled = false;
     playBtn.disabled = true;
-    const cashOutSound = new Audio('sounds/ESM_Vibrant_Cash_Register_Open_Positive_Game_Open_Arcade_Cartoon_Quirky_Comedy_Comedic_Kid_Childish_Fun_Bouncy.wav'); 
+    const cashOutSound = new Audio('sounds/ESM_Vibrant_Cash_Register_Open_Positive_Game_Open_Arcade_Cartoon_Quirky_Comedy_Comedic_Kid_Childish_Fun_Bouncy.mp3'); 
     cashOutSound.play();
     if(cashOut.disabled === false){
         cashOut.disabled = true;
@@ -138,11 +138,11 @@ function cashOutSound() {
 }
 
 function clickSound() {
-    const clickSound = new Audio('sounds/MouseClick_SFXB.4113.wav'); 
+    const clickSound = new Audio('sounds/MouseClick_SFXB.4113.mp3'); 
     clickSound.play();
 }
 
-const musicSound = new Audio('sounds/CasinoSlotMachine_SFXB.21.wav'); 
+const musicSound = new Audio('sounds/CasinoSlotMachine_SFXB.21.mp3'); 
 musicSound.loop = true;
 function playMusicSound() {
     
