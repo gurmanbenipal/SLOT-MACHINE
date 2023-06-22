@@ -10,50 +10,77 @@
         margin-top: 0;
         text-align: center;
         width: 100%;
+        font-size: 8vmin !important;
+        font-family: 'Bagel Fat One', cursive!important;
+        color: rgb(0, 115, 255);
+        
     }
     body {
+        min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
+        background-color: rgb(245, 228, 208);
+      
         
     }
     body > div {
        
-        width: 10%;
-        height: 20vh;
-    
+        width: 15%;
+        height: 25vh;
+        
         align-items: center;
         
-        border: 3px solid black;
+        border: 3vmin solid rgb(190, 84, 84);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-       
+        animation: glowBorder 1s infinite alternate;
     }
+    
+    @keyframes glowBorder {
+      0% {
+        box-shadow: 0 0 0 0 rgb(224, 186, 48);
+      }
+      100% {
+        box-shadow: 0 0 5px 0px rgb(205, 157, 118);
+      }
+    }  
+    
     #box0{
-        margin-left: 35%;
+        margin-left: 27%;
         
        
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
     }
-    /* #box3{
-        margin-left: 35%;
-    }
-    #box6{
-        margin-left: 35%;
-    } */
+
     .cash-out{
-        width: 100%;
+        margin-left: 90% ;
+        height: 50%;
+        border-radius: 50%;
+        color: rgb(215, 23, 170);
+        background-color: rgb(201, 153, 21);
 
     }
     .start{
-        width: 100%;
+        font-size: 6vmin;
+        margin-left: 46%;
+        margin-right: 50%;
+        height: 50%;
+        border-radius: 60%;
+        color: rgb(228, 228, 228);
+        background-color: rgb(161, 18, 18);
+
     }
     #title {
-        
+       
+        font-family: 'Dancing Script', cursive;
+
         margin-top: 5%;
         text-align: center;
         width: 100%;
-        font-size: 30px ;
+        font-size: 15vmin ;
+        color: rgb(178, 51, 34);
+       
     }
