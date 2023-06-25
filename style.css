@@ -1,86 +1,276 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+  
+  body {
+    background: radial-gradient(circle, rgba(47,74,226,1) 0%, rgba(226,36,79,1) 100%);
  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    font-family: 'Open Sans',  sans-serif ;
+    color: white;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 20px;
+
+  }
+  
+
+.background-animation {
+    animation-name: backgroundFade;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  /* below animation probably has better ways of implimenting it but all i did was divide all the numbers by 20 and then kept subracting the divided answer from each value */
+  @keyframes backgroundFade {
+    0% {
+      background: linear-gradient(to bottom, rgba(47, 74, 226, 1) 0%, rgba(226, 36, 79, 1) 100%);
+    }
+    5% {
+      background: linear-gradient(to bottom, rgba(44.65, 70.3, 214.7, 1) 0%, rgba(214.7, 34.2, 74.05, 1) 100%);
+    }
+    10% {
+      background: linear-gradient(to bottom, rgba(42.3, 66.6, 203.4, 1) 0%, rgba(203.4, 32.4, 69.1, 1) 100%);
+    }
+    15% {
+      background: linear-gradient(to bottom, rgba(39.95, 62.9, 192.1, 1) 0%, rgba(192.1, 30.6, 64.15, 1) 100%);
+    }
+    20% {
+      background: linear-gradient(to bottom, rgba(37.6, 59.2, 180.8, 1) 0%, rgba(180.8, 28.8, 59.2, 1) 100%);
+    }
+    25% {
+      background: linear-gradient(to bottom, rgba(35.25, 55.5, 169.5, 1) 0%, rgba(169.5, 27, 54.25, 1) 100%);
+    }
+    30% {
+      background: linear-gradient(to bottom, rgba(32.9, 51.8, 158.2, 1) 0%, rgba(158.2, 25.2, 49.3, 1) 100%);
+    }
+    35% {
+      background: linear-gradient(to bottom, rgba(30.55, 48.1, 146.9, 1) 0%, rgba(146.9, 23.4, 44.35, 1) 100%);
+    }
+    40% {
+      background: linear-gradient(to bottom, rgba(28.2, 44.4, 135.6, 1) 0%, rgba(135.6, 21.6, 39.4, 1) 100%);
+    }
+    45% {
+      background: linear-gradient(to bottom, rgba(25.85, 40.7, 124.3, 1) 0%, rgba(124.3, 19.8, 34.45, 1) 100%);
+    }
+    50% {
+      background: linear-gradient(to bottom, rgba(23.5, 37, 113, 1) 0%, rgba(113, 18, 29.5, 1) 100%);
+    }
+    55% {
+      background: linear-gradient(to bottom, rgba(21.15, 33.3, 113, 1) 0%, rgba(113, 16.2, 24.55, 1) 100%);
+    }
+    60% {
+      background: linear-gradient(to bottom, rgba(18.8, 29.6, 90.4, 1) 0%, rgba(90.4, 14.4, 19.6, 1) 100%);
+    }
+    65% {
+      background: linear-gradient(to bottom, rgba(16.45, 25.9, 79.1, 1) 0%, rgba(79.1, 12.6, 14.65, 1) 100%);
+    }
+    70% {
+      background: linear-gradient(to bottom, rgba(14.1, 22.2, 67.8, 1) 0%, rgba(67.8, 10.8, 9.7, 1) 100%);
+    }
+    75% {
+      background: linear-gradient(to bottom, rgba(11.75, 18.5, 56.5, 1) 0%, rgba(56.5, 9, 4.75, 1) 100%);
+    }
+    80% {
+      background: linear-gradient(to bottom, rgba(9.4, 14.8, 45.2, 1) 0%, rgba(45.2, 7.2, 0.8, 1) 100%);
+    }
+    85% {
+      background: linear-gradient(to bottom, rgba(7.05, 11.1, 33.9, 1) 0%, rgba(33.9, 5.4, 0.25, 1) 100%);
+    }
+    90% {
+      background: linear-gradient(to bottom, rgba(4.7, 7.4, 22.6, 1) 0%, rgba(22.6, 3.6, 0.7, 1) 100%);
+    }
+    95% {
+      background: linear-gradient(to bottom, rgba(2.35, 3.7, 11.3, 1) 0%, rgba(11.3, 1.8, 0.3, 1) 100%);
+    }
+    100% {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+  }
+   
+  
+   
+  
+  
+  .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+    width: 10%; 
+    margin: 0 auto; 
+  }
+  
+
+  h1 {
+    font-family: 'Dancing Script', cursive ;
+    font-size: 10vmin ;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.heading {
+  text-align: center;
+  width: 100%;
+
+}
+  
+  h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3.5vmin;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
+
+  }
+  
+  button {
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    color: rgb(39, 36, 36);
+    border-radius: 0.8vmin;  
+    padding: 1.6vmin 3.2vmin;  
+    font-size: 2vmin;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+  
+  button:hover {
+
+
+    transform: scale(1.05);
+ 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+ 
+  
+  
+  button.start {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vmin;
+    background-color: limegreen;
+  }
+
+  button.reset {
+ 
+    background-color: red;
+    margin-left: 1vmin;
+  }
+  
+  button.cash-out {
+
+    background-color: gold;
+  }
+  
+  button.increasebet {
+    background-color: violet;
+
+  }
+  
+  button.backgroundSound {
+    background-color: deepskyblue;
+  }
+
+  button:disabled {
+
+    transform: scale(1);
+    opacity: 50%;
+    cursor: not-allowed;
+    box-shadow: 0 0px 0px ;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
+   }
+   
+  
+  #box0, #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
+    width: 15vmin;
+    height: 15vmin;
+    border: 5px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .win {
+    border-color: gold;
+    animation: flash 1s infinite;
+  }
+
+  @keyframes flash {
+    0%, 50%, 100% {
+      border-color: gold;
+    }
+    25%, 75% {
+      border-color: transparent;
+    }
+  }
+
+  .spinanimation {
+    animation: colorflash 2s linear infinite;
 }
 
+@keyframes colorflash {
+    0%, 50%, 100% {
+        background-color: red; 
+    }
+    25%, 75% {
+        background-color: yellow;
+    }
+}
+  .textanimation {
+    animation: textflash 2s linear infinite;
+}
 
+@keyframes textflash {
+    0%, 50%, 100% {
+       color: red; 
+    }
+    25%, 75% {
+        color: yellow;
+    }
+}
+
+  p, span, .amount {
+    font-family: 'Bebas Neue';
+    font-size: 4vmin;
     
-    h2 {
-        border: 3px solid black;
-        margin-top: 0;
-        text-align: center;
-        width: 100%;
-        font-size: 8vmin !important;
-        font-family: 'Bagel Fat One', cursive!important;
-        color: rgb(0, 115, 255);
-        
-    }
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: rgb(245, 228, 208);
-      
-        
-    }
-    body > div {
-       
-        width: 15%;
-        height: 25vh;
-        
-        align-items: center;
-        
-        border: 3vmin solid rgb(190, 84, 84);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        animation: glowBorder 1s infinite alternate;
-    }
-    
-    @keyframes glowBorder {
-      0% {
-        box-shadow: 0 0 0 0 rgb(224, 186, 48);
-      }
-      100% {
-        box-shadow: 0 0 5px 0px rgb(205, 157, 118);
-      }
-    }  
-    
-    #box0{
-        margin-left: 27%;
-        
-       
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
+  }
+  
+.amount{
+  margin-right: 3vmin;
+}
+.bet{
+  margin-left: 2vmin;
+}
+  #volume {
+    display: none;
+  }
+.betting{
+  display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-    .cash-out{
-        margin-left: 90% ;
-        height: 50%;
-        border-radius: 50%;
-        color: rgb(215, 23, 170);
-        background-color: rgb(201, 153, 21);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
 
-    }
-    .start{
-        font-size: 6vmin;
-        margin-left: 46%;
-        margin-right: 50%;
-        height: 50%;
-        border-radius: 60%;
-        color: rgb(228, 228, 228);
-        background-color: rgb(161, 18, 18);
-
-    }
-    #title {
-       
-        font-family: 'Dancing Script', cursive;
-
-        margin-top: 5%;
-        text-align: center;
-        width: 100%;
-        font-size: 15vmin ;
-        color: rgb(178, 51, 34);
-       
-    }
+input{
+  margin-top: 2vmin;
+}
