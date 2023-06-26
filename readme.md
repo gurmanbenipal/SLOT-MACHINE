@@ -18,7 +18,7 @@ Welcome to my Slot Machine Game :).This game is a browser based version for a re
 
 ## Getting Started
 
-1. Click the link to play: `https://gurmanbenipal.github.io/SLOT-MACHINE/`
+1. [CLICK HERE TO PLAY!](https://gurmanbenipal.github.io/SLOT-MACHINE/)
 2. Place your bets to start spinning!
 
 ## Game Instructions
