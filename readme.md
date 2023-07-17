@@ -10,11 +10,7 @@ Welcome to my Slot Machine Game :).This game is a browser based version for a re
 - Enjoy sound effects and background music.
 
 ## Technologies Used
-<img src="html-5.png" alt="HTML5" width="50" height="45">
-<img src="css-3.png" alt="CSS" width="50" height="45">
-<img src="js.png" alt="JS" width="35" height="35">
-<img src="Visual_Studio_Code_1.35_icon.svg.png" alt="VS CODE" width="35" height="35">
-<img src="github-sign.png" alt="GIT HUB" width="35" height="35">
+<img src="html-5.png" alt="HTML5" width="50" height="45"> <img src="css-3.png" alt="CSS" width="50" height="45"> <img src="js.png" alt="JS" width="35" height="35"> <img src="Visual_Studio_Code_1.35_icon.svg.png" alt="VS CODE" width="35" height="35"> <img src="github-sign.png" alt="GIT HUB" width="35" height="35">
 
 ## Getting Started
 
